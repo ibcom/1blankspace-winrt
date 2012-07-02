@@ -1,4 +1,4 @@
-1blanksspace-winrt
+1blankspace-winrt
 ==================
 
-Sample WinRT API Enterprise application
+Sample WinRT API Enterprise application based on mydigitalstructure.com
