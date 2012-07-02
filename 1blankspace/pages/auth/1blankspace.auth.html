@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>alt-enter Sign In</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0.RC/css/ui-light.css" rel="stylesheet" />
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/css/1blankspace.auth.css" rel="stylesheet" />
+
+    <script src="//Microsoft.WinJS.1.0.RC/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0.RC/js/ui.js"></script>
+    <script src="/js/navigator.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/jquery.js"></script>
+
+    <script src="/js/mydigitalstructure.ns.js"></script>
+    <script src="/js/1blankspace.ns.js"></script>
+    <script src="/js/1blankspace.auth.ns.js"></script>
+    <script src="/pages/auth/1blankspace.auth.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>alt-enter</h1>
+    </div>
+    <div id="LoginBox" class="box">
+        <div class="content">
+            <label>Login Name</label>
+            <input type="text" id="inputLogonName" />
+            <label>Password</label>
+            <input type="password" id="inputPassword" />
+            <div id="divResult">
+                <label class="progressRingText">
+                <progress class="win-ring"></progress>Authenticating</label></div>
+            <input type="submit" 
+                value="Login" 
+                id="btnSubmit" />
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿#LoginBox
+{
+    width:100%;
+    margin: 20% auto 0 auto;
+    color:#fff;
+    background-color:#808080;
+}
+
+    #LoginBox .content
+    {
+        width:260px;
+        padding:20px;
+        margin: 0 auto;
+    }
+
+.box
+{
+    display:none;
+}
+
+    .box.show
+    {
+        display:block;
+    }
+
+.error
+{
+    color:#f00;
+}
+
+
+

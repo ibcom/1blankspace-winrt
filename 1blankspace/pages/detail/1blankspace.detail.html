@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>1blankspace</title>
+    
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0.RC/css/ui-light.css" rel="stylesheet" />
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/css/1blankspace.detail.css" rel="stylesheet" />
+
+    <script src="//Microsoft.WinJS.1.0.RC/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0.RC/js/ui.js"></script>
+    <script src="/js/navigator.js"></script>
+
+    <script src="/js/mydigitalstructure.ns.js"></script>
+    <script src="/js/1blankspace.ns.js"></script>
+    <script src="/js/1blankspace.hub.ns.js"></script>
+    <script src="/pages/detail/1blankspace.detail.js"></script>
+</head>
+<body>
+    <!-- This template is used to display each item in the ListView declared below. -->
+    <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
+        <div class="item-info">
+            <h3 class="item-title win-type-ellipsis" data-win-bind="textContent: name"></h3>
+        </div>
+    </div>
+
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment itemdetailpage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle" id="spanObjectPageTitle">Item Title</span>
+                <button class="action" id="buttonObjectSave">Save</button>
+                <button class="action" id="buttonObjectNew">New</button>
+                <button class="action" id="buttonObjectSearch">Search</button>
+            </h1>
+        </header>
+        <div class="contentNoContext" 
+            id="divObjectContentNoContext" 
+            aria-label="Content out of Context" role="main">
+           <article>
+                <div>
+                    <header>
+                        <h2 class="item-title">Most Likely</h2>
+                    </header>
+                    <div class="item-content" id="divObjectContentNoContextDetail">
+                        <label class="progressRingText">
+                            <progress class="win-ring"></progress>Searching</label>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="contentInContext" id="divObjectContentInContext" aria-label="Content in Context" role="main">
+           <div class="itemlistsection" aria-label="Navigation">
+                <div class="itemlist" 
+                    aria-label="Navigation tabs" 
+                    data-win-control="WinJS.UI.ListView" 
+                    data-win-options="{ selectionMode: 'single', tapBehavior: 'toggleSelect' }"></div>
+            </div>
+            <div class="articlesection" aria-atomic="true" aria-label="Object Detail column" aria-live="assertive">
+                <article>
+                    <header class="header">
+                        <div class="text">
+                            <h2 class="article-title win-type-ellipsis" data-win-bind="textContent: title"></h2>
+                        </div>
+                    </header>
+                    <div class="article-content" data-win-bind="innerHTML: content"></div>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
